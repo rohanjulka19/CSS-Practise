@@ -1,0 +1,103 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, img, p {
+    margin: 0;
+
+}
+
+body {
+    height: 100vh;
+    background: #F2F5F9;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    max-width: 28%;
+    margin: auto;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color:#111729;
+}
+
+.hero-image-box {
+    position: relative;
+}
+
+.hero-image-box > .hero-image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+
+.card > * + * {
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.card :nth-child(n + 3) {
+    margin-top: 1rem;
+}
+
+.hero-image-box > .hero-image-overlay {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    display: block;
+    height: 25%;
+}
+
+.card-text {
+    font-size: 1rem;
+    font-weight: 300;
+    color:#677489;
+    margin-bottom: 0.5rem;
+    word-spacing: 1px;
+    line-height: 1.5rem;
+    opacity: 90%;
+}
+
+.card-rule {
+    height: 1px;
+    background: #F2F5F9;
+}
+
+.id-card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.id-card-avatar {
+    height: 12%;
+    width: 12%;
+    border-radius: 50%;
+    border: 3px solid #F2F5F9;
+}
+
+.id-card-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111729;
+}
+
+.id-card-text {
+    font-size: 0.75rem;
+    color: #677489;
+    word-spacing: 1px;
+}
