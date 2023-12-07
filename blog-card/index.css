@@ -1,0 +1,71 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, h3, p, hr, img {
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #FAFAF9;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 27%;
+    background: #FFFFFF;
+    border-radius: 5%;
+    box-shadow: 0px 0px 20px 0px rgba(17, 23, 41, 0.05);    
+}
+
+.card > * {
+    margin: 16px 16px 0px 16px;
+}
+
+.card > .title {
+    font-size: 1.125rem;
+}
+
+.card > .icon {
+    border-radius: 1rem;
+}
+
+.card > .tag {
+    text-decoration: none;
+    background: #E6D6FC;
+    color: #883AE1;
+    width: max-content;
+    padding: 0.25rem 1rem;
+    border-radius: 1rem;
+    font-size: 0.625rem;
+    font-weight: 600;
+}
+.card > .text {
+    font-weight: 200;
+    color: #6C727F;
+    margin-top: 5px;
+    font-size: 0.875rem;
+    max-width: 80%;
+    line-height: 1.35rem;
+}
+
+.card > .card-rule {
+    margin: 20px 0px 0px 0px;
+    font-weight: 100;
+    background: #E5EAF0;
+    height: 1px;
+}
+
+.card > .footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 0.75rem;
+    color: #6C727F;
+    font-weight: 300;
+}
